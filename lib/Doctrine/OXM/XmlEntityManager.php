@@ -415,5 +415,21 @@ class XmlEntityManager implements ObjectManager
         return $this->unitOfWork;
     }
 
-
+    /**
+     * @param object $obj
+     */
+    public function initializeObject($obj)
+    {
+        // not implemented
+        return null;
+    }
+    /**
+     * @param object $object
+     * @return bool
+     */
+    public function contains($object)
+    {
+        // not implemented
+        return null;
+    }
 }
