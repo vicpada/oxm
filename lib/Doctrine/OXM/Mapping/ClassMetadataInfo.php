@@ -942,5 +942,40 @@ class ClassMetadataInfo implements BaseClassMetadata
     {
         return $this->xmlNamespaces;
     }
+    
+    /**
+     * @return mixed
+     */
+    public function getIdentifierFieldNames()
+    {
+        return $this->identifier;
+    }
+    /**
+     * @param string $assocName
+     * @return boolean
+     */
+    public function isAssociationInverseSide($assocName)
+    {
+        // not implemented
+        return array();
+    }
+    /**
+     * @param string $assocName
+     * @return string
+     */
+    public function getAssociationMappedByTargetField($assocName)
+    {
+        // not implemented
+        return array();
+    }
+    /**
+     * @param object $object
+     * @return array
+     */
+    public function getIdentifierValues($object)
+    {
+        // not implemented
+        return array();
+    }
 
 }
