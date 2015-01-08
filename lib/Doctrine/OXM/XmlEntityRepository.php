@@ -130,5 +130,14 @@ class XmlEntityRepository implements ObjectRepository
             return $this->xem->getUnitOfWork()->getXmlEntityPersister($this->entityName)->load($id, null, null, array(), $lockMode);
         }
     }
-
+    
+    /**
+     * Returns the class name of the object managed by the repository
+     *
+     * @return string
+     */
+    function getClassName()
+    {
+        return $this->class->getName();
+    }
 }
