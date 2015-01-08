@@ -443,4 +443,13 @@ class ClassMetadataFactory implements BaseClassMetadataFactory
     {
         return new ClassMetadata($className);
     }
+    
+    /**
+     * @param string $className
+     * @return boolean
+     */
+    public function isTransient($className)
+    {
+        return $this->driver->isTransient($className);
+    }
 }
