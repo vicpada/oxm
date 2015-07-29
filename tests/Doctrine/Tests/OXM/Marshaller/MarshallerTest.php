@@ -443,6 +443,7 @@ class MarshallerTest extends \PHPUnit_Framework_TestCase
         $this->assertTrue($otherTag4 instanceof Tag);
         $this->assertEquals('article for tag4', $otherTag4->article->name);
         $this->assertEquals('four', $otherTag4->name);
+	}
 
     public function itShouldSupportEmptyElement()
     {
