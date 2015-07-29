@@ -292,6 +292,7 @@ class XmlMarshaller implements Marshaller
 
                         if (in_array($cursor->nodeType, array(XMLReader::WHITESPACE, XMLReader::SIGNIFICANT_WHITESPACE, XMLReader::END_ELEMENT))) {
                             continue;
+						}
 						elseif (!$cursor->isEmptyElement && $cursor->nodeType !== XMLReader::END_ELEMENT) {
                             if ($cursor->nodeType !== XMLReader::TEXT && $cursor->nodeType !== XMLReader::CDATA) {
                                 throw MarshallerException::invalidMarshallerState($cursor);
